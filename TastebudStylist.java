@@ -17,7 +17,7 @@ public class TastebudStylist extends Employee {
 			setEffectivenessMultiplier(getEffectivenessMultiplier() + .1);
 		}
 	}
-	
+	// @BC: Great opportunity here to move this up into the superclass to avoid duplication -- even though Shakers won't use this method
 	private boolean calculateChances(int chance){
 		Random r = new Random() ;
 		int randomNumber = r.nextInt(100);

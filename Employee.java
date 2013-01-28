@@ -1,3 +1,4 @@
+// @BC: Beautifully designed superclass and subclasses!
 public abstract class Employee {
 	private double effectivenessMultiplier; 
 	private int baseWeeklySalary; //0 to int
@@ -30,7 +31,7 @@ public abstract class Employee {
 	public int getTotalPaymentToDate(){
 		return totalPaymentToDate;
 	}
-
+	// @BC: Looking at how this is used in the subclasses, can you consider a simplier set of mutators to create here?
 	public void setEffectivenessMultiplier(double e){
 		effectivenessMultiplier = e;
 	}
